@@ -35,12 +35,13 @@ const Form = ({ handleAdd, transactionsList, setTransactionsList }) => {
     <>
       <C.Container>
         <C.InputContent>
-          <C.Label>Descrição</C.Label>
-          <C.Input value={desc} onChange={(e) => setDesc(e.target.value)} />
+          <C.Label htmlFor="rDescription">Descrição</C.Label>
+          <C.Input id="rDescription" value={desc} onChange={(e) => setDesc(e.target.value)} />
         </C.InputContent>
         <C.InputContent>
-          <C.Label>Valor</C.Label>
+          <C.Label htmlFor="rValue">Valor</C.Label>
           <C.Input
+            id="rValue"
             value={amount}
             type="number"
             onChange={(e) => setAmount(e.target.value)}
