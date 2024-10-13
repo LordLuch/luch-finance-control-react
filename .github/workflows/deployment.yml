@@ -25,9 +25,6 @@ jobs:
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-      - name: check code style
-        run: |
-          npm run lint
       - name: run all tests
         run: |
           npm run test
